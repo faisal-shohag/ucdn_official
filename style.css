@@ -1,109 +1,72 @@
-
+body{
+    margin: 0;
+    padding: 0;
+    
+}
 .top{
+    height: 70px;
+    width:99%;
+    background: #ffff;
     display: flex;
     justify-content: space-between;
-    padding: 5px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    border-radius: 5px;
-}
-.top .logo img{
-    height: 65px;
-}
-
-.top .avatar{
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    overflow: hidden;
+    align-items: center;
+    padding: 0px 10px;
+    box-shadow: 0px 2px 8px;
+    position: fixed;
+    top:0;
 }
 
-.top .avatar img{
-    height: 80px;
-    width: 80px;
+.login_image{
+height: 50px;
+width: 50px;
+border-radius: 50%;
+overflow: hidden;
+border:2px solid;
+}
+
+.logo img{
+height: 50px;
+}
+.login_image img{
+ height: 50px; 
+ width: 50px;  
+}
+.hamburger_icon{
+    font-size: 40px;
 }
 
 
-.slide{
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-    padding: 10px 10px;
-    margin: 20px 0px;
-    border-radius: 5px;
-    /* height: 200px; */
-    background: linear-gradient(45deg, rgb(80, 95, 175), rgb(116, 63, 133));
+.hamburger_menu{
+    height: 100%;
+    width: 20%;
+    background: #fff;
+    padding: 20px 20px;
+    box-shadow: 1px 0px 8px 1px;
     position: relative;
-
-    font-family: Hind Siliguri;
-    
-}
-
-.slide .sl{
- display: flex;
- text-align: center;
- justify-content: center;
- align-items: center;
-}
-
-.h1{
-    font-size: 25px;
-    color: #ffff;
-}
-
-.h3{
- font-size: 20px;
+    left: 0;
+    top: 0;
+    display: none; 
 
 }
 
-a{
-    text-decoration: none;
-}
-
-.h2{
-    font-size: 23px;
-    color: #eeee;
-}
-
-.bg-red{
-    background: crimson;
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
-
-}
-.sl .text{
-    margin-left: 40px;
-}
-
-.slide .image{
+.item{
+    margin: 15px;
+    border-bottom: 1px solid;
     padding: 5px;
-    background: #222;
-    height: 180px;
-    width: 129px;
-    transform: rotate(10deg);
-    margin-left: 50px;
-}
-.slide .image img{
-    height: 180px;
 }
 
-@media only screen and (max-width: 600px){  
-    .top .logo img{
-        height: 40px;
-    }
 
-    .top .avatar{
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        overflow: hidden;
-    }
-    
-    .top .avatar img{
-        height: 50px;
-        width: 50px;
-    }
 
-    .slide{
-        height: 140px;
-    }
+.item:hover{
+    background: rgb(207, 205, 205);
+    font-weight: bold;
+
+}
+#close{
+    position: absolute;
+    right:5%;
+    font-size: 30px;
+}
+.items{
+    margin-top:40px;
 }
